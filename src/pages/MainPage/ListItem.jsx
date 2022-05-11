@@ -14,7 +14,7 @@ const ListItem = ({getValue,img,listItem}) => {
               <div onClick={()=>getValue(listItem)} className={style.items}>
                    <div>
 
-                   <img width={18} height={18}  src={img} alt="check"/>
+                   {/* <img width={18} height={18}  src={img} alt="check"/> */}
                    </div>
                  
                 

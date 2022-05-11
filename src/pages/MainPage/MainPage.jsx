@@ -4,6 +4,7 @@ import style from '../MainPage/MainPage.module.scss'
 import ListItem from "./ListItem";
 import { useDispatch, useSelector } from "react-redux";
 import { addToDoItemAC,addToCompletedItemsAC } from "../../redux/toDoReducer";
+import addImg from '../../img/add.svg'
 
 
 
@@ -76,7 +77,7 @@ const MainPage = () => {
                 <input onBlur={(event) => event.target.value = ''} onChange={getNewListItem} />
                 </div>
                
-                <img onClick={addNewListItem} width={50} height={50} src="/img/add.svg" alt="add"/>
+                <img onClick={addNewListItem} width={50} height={50} src={addImg} alt="add"/>
                
               
             </div>
