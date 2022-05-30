@@ -5,6 +5,8 @@ import ListItem from "./ListItem";
 import { useDispatch, useSelector } from "react-redux";
 import { addToDoItemAC,addToCompletedItemsAC } from "../../redux/toDoReducer";
 import addImg from '../../img/add.svg'
+import check from '../../img/check.svg'
+import noCheck from '../../img/noCheck.svg'
 
 
 
@@ -93,7 +95,7 @@ const MainPage = () => {
                   {activeItems.length > 0
                   ? activeItems.map((el) => (
                           
-                    <ListItem getValue={getValue} key={el.id} listItem ={el} img ={"/img/noCheck.svg"}/>))
+                    <ListItem getValue={getValue} key={el.id} listItem ={el} img ={noCheck}/>))
                     
                   : <div className={style.text}> Здесь будет Ваш список дел
                      <div className={style.arrow}></div> </div>
@@ -118,7 +120,7 @@ const MainPage = () => {
                  <ul>
                      
                      { completeItems.map((el) => (
-                          <ListItem listItem={el} img={"/img/check.svg"} />   
+                          <ListItem listItem={el} img={check} />   
                      ))
 
 
